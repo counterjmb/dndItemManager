@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="593.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <ToolBar layoutX="14.0" layoutY="14.0" prefHeight="44.0" prefWidth="769.0">
+        <items>
+            <Label text="Add Something New" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="junkBtn" mnemonicParsing="false" text="Junk Item" textFill="WHITE" />
+            <Button mnemonicParsing="false" text="Weapon" />
+            <Button fx:id="scrollBtn" mnemonicParsing="false" text="Magic Scroll" />
+            <Button mnemonicParsing="false" text="Potion" />
+            <Button mnemonicParsing="false" text="Enemy" />
+            <Button mnemonicParsing="false" text="NPC" />
+            <Button mnemonicParsing="false" text="Magic Item" />
+        </items>
+      </ToolBar>
+      <TabPane layoutX="14.0" layoutY="74.0" prefHeight="452.0" prefWidth="736.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Junk Items">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="336.0" prefWidth="540.0">
+                     <children>
+                        <ListView layoutX="14.0" layoutY="14.0" prefHeight="423.0" prefWidth="736.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="14.0" layoutY="554.0" mnemonicParsing="false" text="Reset" />
+      <Button layoutX="718.0" layoutY="554.0" mnemonicParsing="false" text="Generate" />
+   </children>
+</AnchorPane>

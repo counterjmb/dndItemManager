@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="338.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.junkitem.JunkItemPopUp">
+   <children>
+      <Pane layoutX="2.0" layoutY="26.0" prefHeight="268.0" prefWidth="429.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane alignment="CENTER_LEFT" layoutY="14.0" prefHeight="248.0" prefWidth="422.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="84.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="316.0" minWidth="10.0" prefWidth="316.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="34.0" minHeight="0.0" prefHeight="34.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Name">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Size" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Weight" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Value" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Description" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+                  <TextArea prefHeight="114.0" prefWidth="210.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField onAction="#handle" GridPane.columnIndex="1" />
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </GridPane>
+         </children>
+      </Pane>
+      <Button fx:id="addButton" layoutX="378.0" layoutY="296.0" mnemonicParsing="false" text="Add" />
+   </children>
+</AnchorPane>

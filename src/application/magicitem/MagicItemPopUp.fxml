@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="548.0" layoutY="361.0" mnemonicParsing="false" text="Add" />
+      <RadioButton layoutX="439.0" layoutY="142.0" mnemonicParsing="false" text="Common - 100 GP" />
+      <RadioButton layoutX="439.0" layoutY="170.0" mnemonicParsing="false" text="Uncommon - 400 GP" />
+      <RadioButton layoutX="439.0" layoutY="200.0" mnemonicParsing="false" text="Rare - 4,000 GP" />
+      <RadioButton layoutX="439.0" layoutY="228.0" mnemonicParsing="false" text="Very Rare - 40K GP" />
+      <RadioButton layoutX="439.0" layoutY="254.0" mnemonicParsing="false" text="Legendary 200K GP" />
+      <CheckBox layoutX="48.0" layoutY="52.0" mnemonicParsing="false" text="Require Attunement" />
+      <TextField layoutX="38.0" layoutY="14.0" />
+   </children>
+</Pane>
